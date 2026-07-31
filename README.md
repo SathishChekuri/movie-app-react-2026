@@ -62,8 +62,6 @@ npm run dev
 
 - Home Page
 - WatchList
-- Pagination
-
 ---
 
 ## Upcoming Features
