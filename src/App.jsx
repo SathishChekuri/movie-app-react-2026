@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
@@ -13,6 +13,7 @@ function App() {
   let[Watchlist,setWatchList]=useState([])
   let handleAddToWatchList=(movieObj)=>{
     let newWatchList=[...Watchlist,movieObj]
+    localStorage.setItem('moviesApp',JSON.stringify(newWatchList))
     setWatchList(newWatchList)
     console.log(newWatchList);
   }
@@ -20,9 +21,17 @@ function App() {
     let filteredWatchList=Watchlist.filter((movie)=>{
       return movie.id!==movieObj.id
     })
+    localStorage.setItem('moviesApp',JSON.stringify(filteredWatchList))
     setWatchList(filteredWatchList);
     console.log(filteredWatchList);
   }
+  useEffect(()=>{
+    let moviesFromLocalStorage=localStorage.getItem('moviesApp')
+    if(!moviesFromLocalStorage){
+      return
+    }
+    setWatchList(JSON.parse(moviesFromLocalStorage))
+  },[])
   return (
     <>
       <BrowserRouter>
@@ -35,7 +44,7 @@ function App() {
         <Banner/> <Movies Watchlist={Watchlist} handleAddToWatchList={handleAddToWatchList} handleRemoveFromWatchList={handleRemoveFromWatchList}/>
         </>}
         />
-        <Route path='/WatchList' element={<WatchList/>}/>
+        <Route path='/WatchList' element={<WatchList Watchlist={Watchlist} setWatchList={setWatchList} handleRemoveFromWatchList={handleRemoveFromWatchList}/>}/>
       </Routes>
       </BrowserRouter>
       
