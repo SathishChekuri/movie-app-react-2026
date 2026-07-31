@@ -1,16 +1,26 @@
 # React Movie App
 
-A modern movie browsing application built using React and the TMDB API. Browse popular movies with a clean and responsive interface powered by real-time movie data.
+A modern movie browsing application built using React and the TMDB API. Browse popular movies and maintain your own watchlist with persistent local storage.
 
 ---
 
 ## Features
 
+### Movie Browsing
+
 - Responsive movie cards
 - Pagination
 - React Router navigation
-- TMDB API integration
-- Responsive UI with Tailwind CSS
+
+### Watchlist
+
+- Add movies to watchlist
+- Remove movies from watchlist
+- Persistent Local Storage
+- Search movies
+- Filter by genre
+- Sort by rating (Ascending)
+- Sort by rating (Descending)
 
 ---
 
@@ -21,6 +31,7 @@ A modern movie browsing application built using React and the TMDB API. Browse p
 - Tailwind CSS
 - Axios
 - React Router DOM
+- Local Storage
 - TMDB API
 
 ---
@@ -58,17 +69,18 @@ npm run dev
 
 ---
 
-## Screens
+## Implemented Features
 
-- Home Page
-- WatchList
+- Movie browsing
+- Watchlist
+- Search
+- Genre filter
+- Rating sorting
+- Local Storage
+
 ---
 
 ## Upcoming Features
 
-- Watchlist
-- Local Storage
-- Search Movies
-- Genre Filtering
-- Rating Sorting
 - Dynamic Banner
+- Banner Slider
