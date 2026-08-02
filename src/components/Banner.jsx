@@ -67,7 +67,7 @@ function Banner() {
 
         </button> 
 
-        <div className='text-white text-xi w-full p-2 text-center bg-gray-900/60'>{movies[currentIndex]?.title}</div></div>
+        <div className='text-white text-4xl  font-extrabold w-full p-2 text-center bg-gray-900/60'>{movies[currentIndex]?.title}</div></div>
 
   )
 

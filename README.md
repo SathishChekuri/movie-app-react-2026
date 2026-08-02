@@ -1,86 +1,172 @@
-# React Movie App
+# 🎬 React Movie App
 
-A modern movie browsing application built using React and the TMDB API. Browse popular movies and maintain your own watchlist with persistent local storage.
+A modern movie browsing application built with **React.js** and the **TMDB API**. Discover trending movies, browse through popular titles, view movie details and manage your personal watchlist with a clean and responsive user interface.
+
+---
+
+## Preview
+
+> Browse trending movies with a dynamic banner, search functionality, genre filtering, rating sorting, pagination and a persistent watchlist.
 
 ---
 
 ## Features
 
-### Movie Browsing
+### Dynamic Movie Banner
+- Displays popular movies from TMDB.
+- Previous and Next navigation.
+- Dynamically updates banner image and movie title.
 
-- Responsive movie cards
-- Pagination
-- React Router navigation
+### Browse Popular Movies
+- Browse Movies in WatchList
+- Fetches movies using the TMDB API.
+- Displays movie posters in a responsive grid.
+- Hover effects for better user experience.
 
 ### Watchlist
+- Add movies to your watchlist.
+- Remove movies from the watchlist.
+- Data persists using Local Storage.
 
-- Add movies to watchlist
-- Remove movies from watchlist
-- Persistent Local Storage
-- Search movies
-- Filter by genre
-- Sort by rating (Ascending)
-- Sort by rating (Descending)
+### Search
+- Search movies by title instantly.
+
+### Genre Filter
+- Filter watchlist by movie genre.
+
+### Rating Sorting
+- Sort movies by rating (Ascending).
+- Sort movies by rating (Descending).
+
+### Pagination
+- Navigate through multiple pages of popular movies.
+
+### Responsive UI
+- Mobile-friendly layout.
+- Responsive movie cards and banner.
 
 ---
 
 ## Tech Stack
 
-- React
-- Vite
-- Tailwind CSS
-- Axios
+- React.js
 - React Router DOM
-- Local Storage
+- Axios
+- Tailwind CSS
 - TMDB API
+- Local Storage
 
 ---
 
 ## Project Structure
 
 ```
-src
-├── Components
+src/
+│── assets/
+│── components/
 │   ├── Banner.jsx
 │   ├── MovieCard.jsx
-│   ├── Navbar.jsx
-│   └── Pagination.jsx
 │   ├── Movies.jsx
-│   └── WatchList.jsx
-├── Utility
+│   ├── Navbar.jsx
+│   ├── Pagination.jsx
+│   ├── WatchList.jsx
+│
+│── Utility/
 │   └── genre.js
-├── App.jsx
-└── main.jsx
+│
+│── App.jsx
+│── main.jsx
 ```
+
+---
+
+## Screens
+
+- Home Page
+- Dynamic Movie Banner
+- Trending Movies
+- Watchlist
+- Search
+- Genre Filter
+- Rating Sort
 
 ---
 
 ## Installation
 
+Clone the repository
+
 ```bash
-git clone https://github.com/your-username/react-movie-app.git
+git clone https://github.com/SathishChekuri/movie-app-react-2026.git
+```
 
-cd react-movie-app
+Navigate to the project
 
+```bash
+cd movie-app-react-2026
+```
+
+Install dependencies
+
+```bash
 npm install
+```
 
+Run the project
+
+```bash
 npm run dev
 ```
 
 ---
 
-## Implemented Features
+## API
 
-- Movie browsing
-- Watchlist
-- Search
-- Genre filter
-- Rating sorting
-- Local Storage
+This project uses **The Movie Database (TMDB) API**.
+
+https://developer.themoviedb.org/
 
 ---
 
-## Upcoming Features
+## Current Features
 
 - Dynamic Banner
-- Banner Slider
+- Movie Slider
+- Latest Movies
+- Search Movies
+- Genre Filtering
+- Rating Sorting
+- Pagination
+- Add to Watchlist
+- Remove from Watchlist
+- Persistent Watchlist (Local Storage)
+- Responsive Design
+
+---
+## Learning Outcomes
+
+This project helped me strengthen my understanding of:
+
+- React Components
+- React Hooks
+- useState
+- useEffect
+- React Router
+- Props
+- Conditional Rendering
+- API Integration using Axios
+- Local Storage
+- Tailwind CSS
+- Responsive Design
+- State Management
+- Event Handling
+
+---
+
+## Author
+
+**Sathish Chekuri**
+
+GitHub: https://github.com/SathishChekuri
+
+LinkedIn: https://www.linkedin.com/in/sathish-chekuri/
