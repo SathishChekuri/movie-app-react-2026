@@ -141,6 +141,8 @@ https://developer.themoviedb.org/
 - Remove from Watchlist
 - Persistent Watchlist (Local Storage)
 - Responsive Design
+- deploy on vercel(coming)
+
 
 ---
 ## Learning Outcomes
