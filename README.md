@@ -164,6 +164,11 @@ This project helped me strengthen my understanding of:
 - Event Handling
 
 ---
+## Deployment
+
+The application is successfully deployed on **Vercel**, ensuring fast performance, automatic deployments and reliable global content delivery.
+
+**Live Demo:** https://movie-app-react-2026.vercel.app/
 
 ## Author
 
